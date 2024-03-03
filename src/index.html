@@ -1,0 +1,729 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .page-wrapper {
+      max-width: 1700px; /* Maksimum genişlik belirleyebilirsiniz */
+      margin: 0 auto; /* Sayfayı ortalamak için otomatik kenar boşluğu */
+      padding: 20px; /* İçeriğin kenarlardan uzaklığı */
+      background-color: #f0f0f0; /* Opsiyonel: Sayfa arkaplan rengi */
+    }
+    .section li:hover {
+      text-decoration: underline;
+    }
+    .section li {
+      margin: 0 auto;
+    }
+    .img {
+      width: 0.8rem;
+      height: 0.5rem;
+    }
+    .panel {
+      background: #003366;
+      color: white;
+    }
+    .hosting {
+      color: rgb(15, 70, 138);
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: initial; 
+      font-size: 13px;
+      letter-spacing: 0.10rem;
+      font-weight: bold;
+    }
+    .icon-list {
+  list-style-image: url('ikon.png');
+}
+li {
+  display: inline-flex;
+  column-gap: 1rem;
+}
+ul {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: center;
+}
+/* Sabit pozisyonlu header stil */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Diğer içeriklerin üzerine çıkacak şekilde bir z-index değeri veriyoruz */
+  background-color: #fff; /* Arka plan rengi */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölgelendirme */
+}
+
+/* İkinci headerin görünürlüğünü ayarlamak için ekstra bir stil */
+.second-header {
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+ /* Diğer içeriklerin üzerine çıkacak şekilde bir z-index değeri veriyoruz */
+  background-color: #fff; /* Arka plan rengi */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+  </style>
+</head>
+<body>
+  
+  <header class="whitespace-nowrap fixed-header">
+    <nav class="flex md:justify-around justify-end py-2 px-2">
+      <div>
+      <span class="lg:text-sm text-[14px] font-semibold md:block hidden"><a href="#">WordPress Hosting paketlerinde %50'ye varan indirimi tıkla ve hemen yakala</a></span>
+    </div>
+
+
+    <div class="flex gap-x-4 text-sm font-mono">
+      <div>
+    <i class="fa-solid fa-phone"></i>
+    <a href="tel:+1234567890">+90 224 334 11 94</a>
+  </div>
+    <div>
+
+      <i class="fa-solid fa-envelope"></i>
+      <a href="#">
+        info@AAAAAHosting.com
+      </a>
+  </div>
+  </div>
+</div>
+
+  </header>
+
+  <!-- Logo and button -->
+  <header class="flex justify-between whitespace-nowrap px-2 py-2 my-8 items-center second-header">
+    <div>
+      <div class="md:flex hidden items-center font-bold text-3xl">
+        <img src="https://sizdo.com/images/mobillogo.png" alt="" class="md:block hidden">
+        AAAAA Hosting
+      </div>
+
+      <img src="https://sizdo.com/images/mobillogo.png" alt="" class="md:hidden block">
+    </div>
+
+    <nav class="md:flex hidden gap-x-7 text-md pr-2">
+      <a href="#" class="inline-flex  items-center gap-x-1">Alan Adı
+        <img src="https://sizdo.com/images/ui/arrow-down.png" alt="" class="img">
+      </a>
+      <a href="#" class="inline-flex  items-center gap-x-1">
+        WordPress
+      </a>
+
+      <a href="#" class="inline-flex  items-center gap-x-1">
+        Hosting
+        <img src="https://sizdo.com/images/ui/arrow-down.png" alt="" class="img">
+      </a>
+
+      <a href="#" class="inline-flex  items-center gap-x-1">
+        Sunucu
+        <img src="https://sizdo.com/images/ui/arrow-down.png" alt="" class="img">
+      </a>
+    </nav>
+
+    <div class="flex items-center gap-x-6">
+      <a href="#" class="px-6 py-2 panel rounded-full font-bold">
+      <button>
+        Müşteri Paneli
+      </button>
+ 
+  </a>
+<div class="md:hidden block">
+  <i class="fa-solid fa-bars text-lg"></i>
+</div>
+</div>
+  </header>
+
+  <div class="page-wrapper">
+  <section class="flex py-24 px-4 justify-center items-center">
+    <aside class="flex flex-col max-md:justify-center items-center gap-y-12 container">
+      <h1 class="text-[48px] tracking-normal font-bold w-1/2 text-center max-md:w-full">İnternet Sitenizin İhtiyaç Duyduğu
+        Hosting Firması</h1>
+
+        <p class="text-xl tracking-wide text-[#333] w-1/2 text-center max-md:w-full">
+          Profesyonel olarak geliştirilmiş Cluster altyapısı ile Web Sitelerinizi emin ellere bırakın, %99.9 UpTime garantisi ile Biz Sitenize Siz İşinize Odaklanın! 
+        </p>
+    </aside>
+
+    <div class="md:block hidden">
+      <img src="https://sizdo.com/images/misc/server.webp" class="animate-pulse" alt="">
+    </div>
+  </section>
+
+  <section class="flex py-24 justify-center flex-col gap-y-6">
+    <p class="text-center text-blue-400 hosting">HOSTİNG PAKETLERİMİZ</p>
+
+  <div class="grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-32 place-items-center text-center gap-y-24">
+    <div class="w-full flex flex-col justify-center mx-auto gap-y-12">
+      <div class="space-y-2">
+        <h3 style="color: #003366;" class="font-bold">Web Starter</h3>
+
+        <p class="text-[#333]">Yeni başlayanların gözdesi</p>
+      </div>
+
+      <div>
+        <h1 class="text-4xl">62.98TL/<span class="text-[14px]">ay</span></h1>
+        <p class="text-gray-500">İndirimsiz <s>34.73TL</s></p>
+      </div>
+
+      <div class="space-y-3">
+        <a href="#" class="px-24 py-2 rounded-full text-2xl text-white font-semibold" style="background: #003366;">
+          <button class="">Sipariş Ver</button>
+        </a>
+        <p class="text-[16px] text-gray-500">Aynı fiyat üzerinden yenileme garantisi</p>
+      </div>
+
+      <ul class="icon-list flex flex-col gap-y-4 text-[#333]">
+        <h1 class="text-3xl inline-block border-b border-red-700 font-semibold">Özellikler</h1>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          <a href="#" style="color: chocolate;">Ücretsiz Domain</a>
+          <i class="fa-solid fa-question rounded-full" style="padding: 4px; color: white; background-color: #333;"></i>
+        </li>
+        <li><i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          1 Site Barındırma
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          Limitsiz NVMe SSD Disk
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          2 GB Bellek
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          2 Core CPU
+        </li>
+      </ul>
+
+      <ul class="icon-list flex flex-col gap-y-4 text-[#333]">
+        <h1 class="text-3xl inline-block border-b border-red-700 font-semibold pb-1">Diğer özellikler</h1>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          <a href="#" style="color: chocolate;">Limitsiz Trafik</a>
+       
+        </li>
+        <li><i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          Ömür Boyu Ücretsiz SSL
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          LiteSpeed / LiteSpeed Cache
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          cPanel Kontrol Paneli
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          7/24 Destek
+        </li>
+      </ul>
+
+      
+
+    </div>
+    
+
+    <div class="w-full flex flex-col justify-center mx-auto gap-y-12">
+      <div class="space-y-2">
+        <h3 style="color: #003366;" class="font-bold">Web Basic</h3>
+
+        <p class="text-[#333]">Birden fazla sitesi bulunanların gözdesi.</p>
+      </div>
+
+      <div>
+        <h1 class="text-4xl">59.98TL/<span class="text-[14px]">ay</span></h1>
+        <p class="text-gray-500">İndirimsiz <s>74.98TL</s></p>
+      </div>
+
+      <div class="space-y-3">
+        <a href="#" class="px-24 py-2 rounded-full text-2xl text-white font-semibold" style="background: #003366;">
+          <button class="">Sipariş Ver</button>
+        </a>
+        <p class="text-[16px] text-gray-500">Aynı fiyat üzerinden yenileme garantisi</p>
+      </div>
+
+      <ul class="icon-list flex flex-col gap-y-4 text-[#333]">
+        <h1 class="text-3xl inline-block border-b border-red-700 font-semibold">Özellikler</h1>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          <a href="#" style="color: chocolate;">Ücretsiz Domain</a>
+          <i class="fa-solid fa-question rounded-full" style="padding: 4px; color: white; background-color: #333;"></i>
+        </li>
+        <li><i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          3 Site Barındırma
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          Limitsiz NVMe SSD Disk
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          2 GB Bellek
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          2 Core CPU
+        </li>
+      </ul>
+
+      <ul class="icon-list flex flex-col gap-y-4 text-[#333]">
+        <h1 class="text-3xl inline-block border-b border-red-700 font-semibold pb-1">Diğer özellikler</h1>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          <a href="#" style="color: chocolate;">Limitsiz Trafik</a>
+       
+        </li>
+        <li><i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          Ömür Boyu Ücretsiz SSL
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          LiteSpeed / LiteSpeed Cache
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          cPanel Kontrol Paneli
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          7/24 Destek
+        </li>
+      </ul>
+
+  
+
+    </div>
+
+    <div class="w-full flex flex-col justify-center mx-auto gap-y-12">
+    
+      <div class="space-y-2">
+        <h3 style="color: #003366;" class="font-bold">Web ProX</h3>
+
+        <p class="text-[#333]">İşini bilen profesyonellerin gözdesi</p>
+      </div>
+
+      <div>
+        <h1 class="text-4xl">89.98TL/<span class="text-[14px]">ay</span></h1>
+        <p class="text-gray-500">İndirimsiz <s>112.98TL</s></p>
+      </div>
+
+      <div class="space-y-3">
+        <a href="#" class="px-24 py-2 rounded-full text-2xl text-white font-semibold" style="background: #003366;">
+          <button class="">Sipariş Ver</button>
+        </a>
+        <p class="text-[16px] text-gray-500">Aynı fiyat üzerinden yenileme garantisi</p>
+      </div>
+
+      <ul class="icon-list flex flex-col gap-y-4 text-[#333]">
+        <h1 class="text-3xl inline-block border-b border-red-700 font-semibold">Özellikler</h1>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          <a href="#" style="color: chocolate;">Ücretsiz Domain</a>
+          <i class="fa-solid fa-question rounded-full" style="padding: 4px; color: white; background-color: #333;"></i>
+        </li>
+        <li><i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          10 Site Barındırma
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          Limitsiz NVMe SSD Disk
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          2 GB Bellek
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          4 Core CPU
+        </li>
+      </ul>
+
+      <ul class="icon-list flex flex-col gap-y-4 text-[#333]">
+        <h1 class="text-3xl inline-block border-b border-red-700 font-semibold pb-1">Diğer özellikler</h1>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          <a href="#" style="color: chocolate;">Limitsiz Trafik</a>
+       
+        </li>
+        <li><i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          Ömür Boyu Ücretsiz SSL
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          LiteSpeed / LiteSpeed Cache
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          cPanel Kontrol Paneli
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          7/24 Destek
+        </li>
+      </ul>
+
+   
+    </div>
+
+    <div class="w-full flex flex-col justify-center mx-auto gap-y-12">
+    
+      <div class="space-y-2">
+        <h3 style="color: #003366;" class="font-bold">Web Premium</h3>
+
+        <p class="text-[#333]">Sınır tanımayanların gözdesi</p>
+      </div>
+
+      <div>
+        <h1 class="text-4xl">119.98TL/<span class="text-[14px]">ay</span></h1>
+        <p class="text-gray-500">İndirimsiz <s>149.98TL</s></p>
+      </div>
+
+      <div class="space-y-3">
+        <a href="#" class="px-24 py-2 rounded-full text-2xl text-white font-semibold" style="background: #003366;">
+          <button class="">Sipariş Ver</button>
+        </a>
+        <p class="text-[16px] text-gray-500">Aynı fiyat üzerinden yenileme garantisi</p>
+      </div>
+
+      <ul class="icon-list flex flex-col gap-y-4 text-[#333]">
+        <h1 class="text-3xl inline-block border-b border-red-700 font-semibold">Özellikler</h1>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          <a href="#" style="color: chocolate;">Ücretsiz Domain</a>
+          <i class="fa-solid fa-question rounded-full" style="padding: 4px; color: white; background-color: #333;"></i>
+        </li>
+        <li><i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          Sınırsız Site Barındırma
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          Limitsiz NVMe SSD Disk
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          8 GB Bellek
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          4 Core CPU
+        </li>
+      </ul>
+
+      <ul class="icon-list flex flex-col gap-y-4 text-[#333]">
+        <h1 class="text-3xl inline-block border-b border-red-700 font-semibold pb-1">Diğer özellikler</h1>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          <a href="#" style="color: chocolate;">Limitsiz Trafik</a>
+       
+        </li>
+        <li><i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          Ömür Boyu Ücretsiz SSL
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          LiteSpeed / LiteSpeed Cache
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          cPanel Kontrol Paneli
+        </li>
+        <li>
+          <i class="fa-solid fa-check px-1 py-1 text-white rounded-full" style="background-color: #003366;"></i>
+          7/24 Destek
+        </li>
+      </ul>
+
+
+
+    </div>
+
+  </div>
+  </section>
+  
+  <section class="flex py-24 justify-center flex-col gap-y-6">
+    <p class="text-center text-blue-400 hosting">KOLAY SİPARİŞ</p>
+    <h2 class="text-center text-4xl text-black font-bold">Oldukça Kolay</h2>
+    <p class="text-center text-[16px] text-[#333c33] w-1/2 mx-auto">Dakikalar içerisinde yalnızca bir kaç aşamayı geçerek işletmenizi tüm Dünyaya yayınlayabilirsiniz.</p>
+
+    <div class="flex px-12 border-b py-4 border-black">
+
+      <div class="flex flex-row gap-x-6 items-center">
+
+        <!-- One Step -->
+        <div class="bg-gray-700 inline-block text-center px-6 py-3 rounded-md h-12">
+         <p class="text-white">1</p> 
+        </div>
+      
+
+        <div class="pt-4">
+          <h1 class="text-2xl text-gray-800 font-bold">Paket Seçimi</h1>
+          <p class="text-sm text-gray-500">
+            İnternet Sitenize uygun bir Hosting paketi seçimi yapabilir eğer hangi paketi seçeceğinizi bilmiyor iseniz bizimle iletişime geçebilirsiniz.
+          </p>
+        </div>
+
+      </div>
+      </div>
+
+      <div class="flex px-12 border-b py-4 border-black">
+
+        <div class="flex flex-row gap-x-6 items-center">
+  
+          <!-- One Step -->
+          <div class="bg-gray-700 inline-block text-center px-6 py-3 rounded-md h-12">
+           <p class="text-white">2</p> 
+          </div>
+        
+  
+          <div class="pt-4">
+            <h1 class="text-2xl text-gray-800 font-bold">Alan Adı Seçimi</h1>
+            <p class="text-sm text-gray-500">
+              İşletmenize uygun Alan Adı seçimi gerçekleştirerek alan adınızın kaydını yapabilir farklı firmada kayıtlı alan adınız bulunuyor ise bizlere transfer edebilirsiniz.
+            </p>
+          </div>
+  
+        </div>
+        </div>
+
+        <div class="flex px-12 border-b py-4 border-black">
+
+          <div class="flex flex-row gap-x-6 items-center">
+    
+            <!-- One Step -->
+            <div class="bg-gray-700 inline-block text-center px-6 py-3 rounded-md h-12">
+             <p class="text-white">3</p> 
+            </div>
+          
+    
+            <div class="pt-4">
+              <h1 class="text-2xl text-gray-800 font-bold">Hesap Oluşturma</h1>
+              <p class="text-sm text-gray-500">
+                Sadece 1 dakika içerisinde oldukça kolay bir şekilde hesabınızı oluşturun.
+              </p>
+            </div>
+    
+          </div>
+          </div>
+
+          <div class="flex px-12 border-b py-4 border-black">
+
+            <div class="flex flex-row gap-x-6 items-center">
+      
+              <!-- One Step -->
+              <div class="bg-gray-700 inline-block text-center px-6 py-3 rounded-md h-12">
+               <p class="text-white">4</p> 
+              </div>
+            
+      
+              <div class="pt-4">
+                <h1 class="text-2xl text-gray-800 font-bold">Ödeme Yapma</h1>
+                <p class="text-sm text-gray-500">
+                  Her türlü Visa/Mastercard logolu banka kartı, Havale/EFT/Fast ile 7/24 ödeme yapabilirsiniz.
+                </p>
+              </div>
+      
+            </div>
+            </div>
+
+          
+          
+    
+    </section>
+
+
+    <section class="flex py-24 justify-between lg:flex-row flex-col gap-y-24 items-center">
+      <div class="flex-1 lg:block hidden">
+        <img src="https://sizdo.com/images/misc/refund.webp" class="" alt="">
+      </div>
+
+      <span class="flex-1 text-5xl font-bold text-black text-center">
+       <span class="text-5xl text-blue-950"> 7 Gün </span> iade garantisi
+      </span>
+
+      <div class="flex-1 mt-24 flex flex-col gap-y-8 text-center">
+        <p class="leading-7 text-xl text-gray-600">
+          Hizmetlerimizden memnun kalmamanız durumunda bizlerle iletişime geçerek hizmet iadesi talebinde bulunabilirsiniz.
+        </p>
+
+        <a href="#" class="px-6 py-2 panel rounded-full font-bold w-1/2 mx-auto text-center">
+          <button class="">
+            Paketleri İncele
+          </button>
+      </a>
+
+      <span class="text-[16px] text-gray-500">
+        *Detaylı Bilgi için lütfen hizmet sözleşmemizi okuyunuz.
+      </span>
+      </div>
+
+
+    </section>
+
+    <section class="py-24 grid grid-cols-4 px-4 max-md:grid-cols-1 gap-y-12 section">
+      <div class="flex flex-col gap-y-4 text-center">
+        <div class="mx-auto">
+          <div class="md:flex hidden items-center font-bold text-3xl">
+            <img src="https://sizdo.com/images/mobillogo.png" alt="" class="md:block hidden">
+            AAAAA Hosting
+          </div>
+    
+          <img src="https://sizdo.com/images/mobillogo.png" alt="" class="md:hidden block">
+        </div>
+        <p class="leading-7 text-[16px] text-gray-500">
+          Adres: Balat Mahallesi, Yakamoz Sokak, No 1/A Daire 69 Nilüfer/Bursa
+Tel: 224 334 11 94
+Mail: info@sizdo.com
+        </p>
+        <h1 class="text-black text-xl font-bold">
+          Ödeme Yöntemlerimiz
+        </h1>
+        
+        <div class="flex flex-row w-16 mx-auto">
+          <img src="https://sizdo.com/images/payments-logo/visa.png" alt="">
+          <img src="https://sizdo.com/images/payments-logo/master-card.png" alt="">
+        </div>
+      </div>
+
+      <div class="flex flex-col text-center gap-y-4">
+        <h3 class="text-lg font-bold">Hosting & Sunucu</h3>
+
+        <ul class="flex flex-col text-center gap-y-3 text-gray-500">
+          <li class="">
+            <a href="#">WordPress Hosting</a>
+          </li>
+
+          <li>
+            <a href="#">Web Hosting</a>
+          </li>
+
+          <li>
+            <a href="#">Sınırsız Hosting</a>
+          </li>
+
+          <li>
+            <a href="#">Ucuz Hosting</a>
+          </li>
+
+          <li>
+            <a href="#">Reseller Hosting</a>
+          </li>
+
+          <li>
+            <a href="#">VDS Sunucu</a>
+          </li>
+
+          <li>
+            <a href="#">VPS Sunucu</a>
+          </li>
+
+          <li>
+            <a href="#">Cloud Sunucu</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-y-4">
+        <h3 class="text-lg font-bold text-center">Kurumsal</h3>
+
+        <ul class="flex flex-col text-center gap-y-3 text-gray-500">
+          <li>
+            <a href="#">Hakkımızda</a>
+          </li>
+
+          <li>
+            <a href="#">Satış Ortaklığı</a>
+          </li>
+
+          <li>
+            <a href="#">Blog</a>
+          </li>
+
+          <li>
+            <a href="#">İletişim</a>
+          </li>
+
+          <li>
+            <a href="#">Banka Hesaplarımız</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-y-6 text-center">
+        <h3 class="text-lg font-bold">
+          Haber bülteni
+        </h3>
+
+        <p class="text-sm text-gray-500 w-full">
+          Bültenimize katılarak herkesten önce kampanyalarımızdan haberdar olabilirsiniz.
+        </p>
+
+        <div class="flex mx-auto">
+          <input type="text" placeholder="mail adresinizi girin" class="bg-white outline-none py-2 px-2 placeholder:text-gray-600">
+          <button type="submit" class="py-3 px-3 bg-gray-700">
+            <i class="fa-solid fa-arrow-right text-white hover:animate-bounce"></i>
+          </button>
+        </div>
+          <div class="mx-auto">
+          <p class="text-sm text-gray-500">E-Postanız bizimle güvende. Spam Bildirimler Yapmıyoruz.</p>
+        </div>
+
+        <div class="flex flex-col gap-y-4 mx-auto">
+          <h1 class="text-xl font-bold">
+            Bizleri Takip Edin
+          </h1>
+
+          <div class="text-gray-800 text-xl flex gap-x-4 font-sans">
+        
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+          </a>
+          
+          <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+          </a>
+          
+          <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+          </a>
+          
+          <a href="#">
+              <i class="fa-brands fa-pinterest"></i>
+          </a>
+          
+          <a href="#">
+              <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          
+            
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-24 pb-6 flex max-md:flex-col max-md:gap-y-12 justify-between px-4 gap-x-24">
+      <a href="#" class="text-lg text-gray-500 w-full">
+        Copyright 2023 - Tüm Hakları Saklıdır. AAAAAA Bilişim Teknolojileri Limited Şirketi
+      </a>
+
+      <div class="flex gap-x-12 mr-12">
+        <a href="#" class="text-[15px] text-gray-500 hover:underline whitespace-nowrap">Hizmet Sözleşmesi</a>
+        <a href="#" class="text-[15px] text-gray-500 hover:underline whitespace-nowrap">Gizlilik Sözleşmesi</a>
+      </div>
+
+    </section>
+  </div>
+</body>
+</html>
